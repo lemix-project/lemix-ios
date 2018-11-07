@@ -1,0 +1,1188 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		571D0A362182BB8F002E92EF /* LemixEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D09EB2182BB8F002E92EF /* LemixEngine.m */; };
+		571D0A372182BB8F002E92EF /* LemixWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D09ED2182BB8F002E92EF /* LemixWebViewController.m */; };
+		571D0A382182BB8F002E92EF /* UiStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D09F22182BB8F002E92EF /* UiStyle.m */; };
+		571D0A392182BB8F002E92EF /* UiNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D09F32182BB8F002E92EF /* UiNavigation.m */; };
+		571D0A3A2182BB8F002E92EF /* ImageCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D09F62182BB8F002E92EF /* ImageCamera.m */; };
+		571D0A3B2182BB8F002E92EF /* MapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D09F82182BB8F002E92EF /* MapLocation.m */; };
+		571D0A3C2182BB8F002E92EF /* ui_navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D09FD2182BB8F002E92EF /* ui_navigation.m */; };
+		571D0A3D2182BB8F002E92EF /* ui_style.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D09FE2182BB8F002E92EF /* ui_style.m */; };
+		571D0A3E2182BB8F002E92EF /* ui_screen.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A012182BB8F002E92EF /* ui_screen.m */; };
+		571D0A3F2182BB8F002E92EF /* net_http.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A042182BB8F002E92EF /* net_http.m */; };
+		571D0A402182BB8F002E92EF /* image_camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A072182BB8F002E92EF /* image_camera.m */; };
+		571D0A412182BB8F002E92EF /* map_location.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A0B2182BB8F002E92EF /* map_location.m */; };
+		571D0A422182BB8F002E92EF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A0D2182BB8F002E92EF /* BaseViewController.m */; };
+		571D0A432182BB8F002E92EF /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A0F2182BB8F002E92EF /* BaseNavigationViewController.m */; };
+		571D0A442182BB8F002E92EF /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A152182BB8F002E92EF /* ColorUtil.m */; };
+		571D0A452182BB8F002E92EF /* PushTransitionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A162182BB8F002E92EF /* PushTransitionUtil.m */; };
+		571D0A462182BB8F002E92EF /* HttpUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A172182BB8F002E92EF /* HttpUtil.m */; };
+		571D0A472182BB8F002E92EF /* MixModuleLifeCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A1D2182BB8F002E92EF /* MixModuleLifeCycle.m */; };
+		571D0A482182BB8F002E92EF /* WebViewCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A212182BB8F002E92EF /* WebViewCacheManager.m */; };
+		571D0A492182BB8F002E92EF /* MixModuleInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A242182BB8F002E92EF /* MixModuleInstance.m */; };
+		571D0A4A2182BB8F002E92EF /* NativePageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A252182BB8F002E92EF /* NativePageInfo.m */; };
+		571D0A4B2182BB8F002E92EF /* LocationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A262182BB8F002E92EF /* LocationInfo.m */; };
+		571D0A4C2182BB8F002E92EF /* MixModuleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A282182BB8F002E92EF /* MixModuleInfo.m */; };
+		571D0A4D2182BB8F002E92EF /* StartUpMixModuleParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A2E2182BB8F002E92EF /* StartUpMixModuleParameter.m */; };
+		571D0A4E2182BB8F002E92EF /* LemixEngineConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A312182BB8F002E92EF /* LemixEngineConfig.m */; };
+		571D0A4F2182BB8F002E92EF /* AimViewControllerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A322182BB8F002E92EF /* AimViewControllerInfo.m */; };
+		571D0A502182BB8F002E92EF /* CommunicationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A332182BB8F002E92EF /* CommunicationInfo.m */; };
+		571D0A512182BB8F002E92EF /* Lemix.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D0A352182BB8F002E92EF /* Lemix.m */; };
+		574E83A5218187C800025550 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 574E83A4218187C800025550 /* AppDelegate.m */; };
+		574E83A8218187C800025550 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574E83A7218187C800025550 /* ViewController.m */; };
+		574E83AB218187C800025550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574E83A9218187C800025550 /* Main.storyboard */; };
+		574E83AD218187CA00025550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574E83AC218187CA00025550 /* Assets.xcassets */; };
+		574E83B0218187CA00025550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574E83AE218187CA00025550 /* LaunchScreen.storyboard */; };
+		574E83B3218187CA00025550 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 574E83B2218187CA00025550 /* main.m */; };
+		574E83BD218187CA00025550 /* lemixExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 574E83BC218187CA00025550 /* lemixExampleUITests.m */; };
+		574E844B218189F400025550 /* lemix.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 574E844A218189F400025550 /* lemix.min.js */; };
+		574E844E21818A4C00025550 /* WaitingPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 574E844C21818A4C00025550 /* WaitingPage.m */; };
+		E1E8B32C3495FD1823DE64EF /* libPods-lemixExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0053182E185DD1D780D272FA /* libPods-lemixExample.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		574E83B9218187CA00025550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 574E83892181879A00025550 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 574E83A0218187C800025550;
+			remoteInfo = lemixExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		571D08842181C2FA002E92EF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574E84B32181A28C00025550 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0053182E185DD1D780D272FA /* libPods-lemixExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lemixExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09C70F58AA09945D95CB0302 /* Pods-lemix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lemix.release.xcconfig"; path = "Pods/Target Support Files/Pods-lemix/Pods-lemix.release.xcconfig"; sourceTree = "<group>"; };
+		571D09EB2182BB8F002E92EF /* LemixEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LemixEngine.m; sourceTree = "<group>"; };
+		571D09ED2182BB8F002E92EF /* LemixWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LemixWebViewController.m; sourceTree = "<group>"; };
+		571D09F02182BB8F002E92EF /* UiStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiStyle.h; sourceTree = "<group>"; };
+		571D09F12182BB8F002E92EF /* UiNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiNavigation.h; sourceTree = "<group>"; };
+		571D09F22182BB8F002E92EF /* UiStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UiStyle.m; sourceTree = "<group>"; };
+		571D09F32182BB8F002E92EF /* UiNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UiNavigation.m; sourceTree = "<group>"; };
+		571D09F52182BB8F002E92EF /* ImageCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCamera.h; sourceTree = "<group>"; };
+		571D09F62182BB8F002E92EF /* ImageCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCamera.m; sourceTree = "<group>"; };
+		571D09F82182BB8F002E92EF /* MapLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocation.m; sourceTree = "<group>"; };
+		571D09F92182BB8F002E92EF /* MapLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLocation.h; sourceTree = "<group>"; };
+		571D09FA2182BB8F002E92EF /* LemixWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LemixWebViewController.h; sourceTree = "<group>"; };
+		571D09FD2182BB8F002E92EF /* ui_navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ui_navigation.m; sourceTree = "<group>"; };
+		571D09FE2182BB8F002E92EF /* ui_style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ui_style.m; sourceTree = "<group>"; };
+		571D09FF2182BB8F002E92EF /* ui_screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui_screen.h; sourceTree = "<group>"; };
+		571D0A002182BB8F002E92EF /* ui_navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui_navigation.h; sourceTree = "<group>"; };
+		571D0A012182BB8F002E92EF /* ui_screen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ui_screen.m; sourceTree = "<group>"; };
+		571D0A022182BB8F002E92EF /* ui_style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui_style.h; sourceTree = "<group>"; };
+		571D0A042182BB8F002E92EF /* net_http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = net_http.m; sourceTree = "<group>"; };
+		571D0A052182BB8F002E92EF /* net_http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net_http.h; sourceTree = "<group>"; };
+		571D0A072182BB8F002E92EF /* image_camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = image_camera.m; sourceTree = "<group>"; };
+		571D0A082182BB8F002E92EF /* image_camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_camera.h; sourceTree = "<group>"; };
+		571D0A0A2182BB8F002E92EF /* map_location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = map_location.h; sourceTree = "<group>"; };
+		571D0A0B2182BB8F002E92EF /* map_location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = map_location.m; sourceTree = "<group>"; };
+		571D0A0D2182BB8F002E92EF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		571D0A0E2182BB8F002E92EF /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		571D0A0F2182BB8F002E92EF /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		571D0A102182BB8F002E92EF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		571D0A122182BB8F002E92EF /* PushTransitionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushTransitionUtil.h; sourceTree = "<group>"; };
+		571D0A132182BB8F002E92EF /* ColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtil.h; sourceTree = "<group>"; };
+		571D0A142182BB8F002E92EF /* HttpUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpUtil.h; sourceTree = "<group>"; };
+		571D0A152182BB8F002E92EF /* ColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtil.m; sourceTree = "<group>"; };
+		571D0A162182BB8F002E92EF /* PushTransitionUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushTransitionUtil.m; sourceTree = "<group>"; };
+		571D0A172182BB8F002E92EF /* HttpUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpUtil.m; sourceTree = "<group>"; };
+		571D0A192182BB8F002E92EF /* ViewControllerTypeEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerTypeEnum.h; sourceTree = "<group>"; };
+		571D0A1A2182BB8F002E92EF /* Lemix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lemix.h; sourceTree = "<group>"; };
+		571D0A1C2182BB8F002E92EF /* MixModuleLifeCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixModuleLifeCycle.h; sourceTree = "<group>"; };
+		571D0A1D2182BB8F002E92EF /* MixModuleLifeCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixModuleLifeCycle.m; sourceTree = "<group>"; };
+		571D0A1F2182BB8F002E92EF /* WaitingPageStandard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitingPageStandard.h; sourceTree = "<group>"; };
+		571D0A212182BB8F002E92EF /* WebViewCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewCacheManager.m; sourceTree = "<group>"; };
+		571D0A222182BB8F002E92EF /* WebViewCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewCacheManager.h; sourceTree = "<group>"; };
+		571D0A242182BB8F002E92EF /* MixModuleInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixModuleInstance.m; sourceTree = "<group>"; };
+		571D0A252182BB8F002E92EF /* NativePageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativePageInfo.m; sourceTree = "<group>"; };
+		571D0A262182BB8F002E92EF /* LocationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationInfo.m; sourceTree = "<group>"; };
+		571D0A272182BB8F002E92EF /* StartUpMixModuleParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartUpMixModuleParameter.h; sourceTree = "<group>"; };
+		571D0A282182BB8F002E92EF /* MixModuleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixModuleInfo.m; sourceTree = "<group>"; };
+		571D0A292182BB8F002E92EF /* CommunicationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicationInfo.h; sourceTree = "<group>"; };
+		571D0A2A2182BB8F002E92EF /* AimViewControllerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AimViewControllerInfo.h; sourceTree = "<group>"; };
+		571D0A2B2182BB8F002E92EF /* LemixEngineConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LemixEngineConfig.h; sourceTree = "<group>"; };
+		571D0A2C2182BB8F002E92EF /* NativePageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativePageInfo.h; sourceTree = "<group>"; };
+		571D0A2D2182BB8F002E92EF /* MixModuleInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixModuleInstance.h; sourceTree = "<group>"; };
+		571D0A2E2182BB8F002E92EF /* StartUpMixModuleParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartUpMixModuleParameter.m; sourceTree = "<group>"; };
+		571D0A2F2182BB8F002E92EF /* LocationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationInfo.h; sourceTree = "<group>"; };
+		571D0A302182BB8F002E92EF /* MixModuleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixModuleInfo.h; sourceTree = "<group>"; };
+		571D0A312182BB8F002E92EF /* LemixEngineConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LemixEngineConfig.m; sourceTree = "<group>"; };
+		571D0A322182BB8F002E92EF /* AimViewControllerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AimViewControllerInfo.m; sourceTree = "<group>"; };
+		571D0A332182BB8F002E92EF /* CommunicationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicationInfo.m; sourceTree = "<group>"; };
+		571D0A342182BB8F002E92EF /* LemixEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LemixEngine.h; sourceTree = "<group>"; };
+		571D0A352182BB8F002E92EF /* Lemix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lemix.m; sourceTree = "<group>"; };
+		572595F92186987B00A43295 /* MapLocationStandard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapLocationStandard.h; sourceTree = "<group>"; };
+		574E83A1218187C800025550 /* lemixExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lemixExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		574E83A3218187C800025550 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		574E83A4218187C800025550 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		574E83A6218187C800025550 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		574E83A7218187C800025550 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		574E83AA218187C800025550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		574E83AC218187CA00025550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		574E83AF218187CA00025550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		574E83B1218187CA00025550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		574E83B2218187CA00025550 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		574E83B8218187CA00025550 /* lemixExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lemixExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		574E83BC218187CA00025550 /* lemixExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lemixExampleUITests.m; sourceTree = "<group>"; };
+		574E83BE218187CA00025550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		574E844A218189F400025550 /* lemix.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = lemix.min.js; sourceTree = "<group>"; };
+		574E844C21818A4C00025550 /* WaitingPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitingPage.m; sourceTree = "<group>"; };
+		574E844D21818A4C00025550 /* WaitingPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitingPage.h; sourceTree = "<group>"; };
+		574E84512181965C00025550 /* liblemage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblemage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		574E845321819C8900025550 /* libSSZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSSZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		574E845521819C8E00025550 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		574E846121819FF700025550 /* LemixEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LemixEngine.m; sourceTree = "<group>"; };
+		574E846321819FF700025550 /* LemixWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LemixWebViewController.m; sourceTree = "<group>"; };
+		574E846621819FF700025550 /* UiStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UiStyle.h; sourceTree = "<group>"; };
+		574E846721819FF700025550 /* UiNavigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UiNavigation.h; sourceTree = "<group>"; };
+		574E846821819FF700025550 /* UiStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UiStyle.m; sourceTree = "<group>"; };
+		574E846921819FF700025550 /* UiNavigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UiNavigation.m; sourceTree = "<group>"; };
+		574E846B21819FF700025550 /* ImageCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCamera.h; sourceTree = "<group>"; };
+		574E846C21819FF700025550 /* ImageCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCamera.m; sourceTree = "<group>"; };
+		574E846E21819FF700025550 /* MapLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapLocation.m; sourceTree = "<group>"; };
+		574E846F21819FF700025550 /* MapLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapLocation.h; sourceTree = "<group>"; };
+		574E847021819FF700025550 /* LemixWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LemixWebViewController.h; sourceTree = "<group>"; };
+		574E847321819FF700025550 /* ui_navigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ui_navigation.m; sourceTree = "<group>"; };
+		574E847421819FF700025550 /* ui_style.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ui_style.m; sourceTree = "<group>"; };
+		574E847521819FF700025550 /* ui_screen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_screen.h; sourceTree = "<group>"; };
+		574E847621819FF700025550 /* ui_navigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_navigation.h; sourceTree = "<group>"; };
+		574E847721819FF700025550 /* ui_screen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ui_screen.m; sourceTree = "<group>"; };
+		574E847821819FF700025550 /* ui_style.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui_style.h; sourceTree = "<group>"; };
+		574E847A21819FF700025550 /* net_http.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = net_http.m; sourceTree = "<group>"; };
+		574E847B21819FF700025550 /* net_http.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = net_http.h; sourceTree = "<group>"; };
+		574E847D21819FF700025550 /* image_camera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = image_camera.m; sourceTree = "<group>"; };
+		574E847E21819FF700025550 /* image_camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = image_camera.h; sourceTree = "<group>"; };
+		574E848021819FF700025550 /* map_location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = map_location.h; sourceTree = "<group>"; };
+		574E848121819FF700025550 /* map_location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = map_location.m; sourceTree = "<group>"; };
+		574E848321819FF700025550 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		574E848421819FF700025550 /* BaseNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		574E848521819FF700025550 /* BaseNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		574E848621819FF700025550 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		574E848821819FF700025550 /* PushTransitionUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushTransitionUtil.h; sourceTree = "<group>"; };
+		574E848921819FF700025550 /* ColorUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorUtil.h; sourceTree = "<group>"; };
+		574E848A21819FF700025550 /* HttpUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpUtil.h; sourceTree = "<group>"; };
+		574E848B21819FF700025550 /* ColorUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorUtil.m; sourceTree = "<group>"; };
+		574E848C21819FF700025550 /* PushTransitionUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushTransitionUtil.m; sourceTree = "<group>"; };
+		574E848D21819FF700025550 /* HttpUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpUtil.m; sourceTree = "<group>"; };
+		574E848F21819FF700025550 /* ViewControllerTypeEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerTypeEnum.h; sourceTree = "<group>"; };
+		574E849021819FF700025550 /* Lemix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lemix.h; sourceTree = "<group>"; };
+		574E849221819FF700025550 /* MixModuleLifeCycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixModuleLifeCycle.h; sourceTree = "<group>"; };
+		574E849321819FF700025550 /* MixModuleLifeCycle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixModuleLifeCycle.m; sourceTree = "<group>"; };
+		574E849521819FF700025550 /* WaitingPageStandard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaitingPageStandard.h; sourceTree = "<group>"; };
+		574E849721819FF700025550 /* WebViewCacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewCacheManager.m; sourceTree = "<group>"; };
+		574E849821819FF700025550 /* WebViewCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewCacheManager.h; sourceTree = "<group>"; };
+		574E849A21819FF700025550 /* MixModuleInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixModuleInstance.m; sourceTree = "<group>"; };
+		574E849B21819FF700025550 /* NativePageInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativePageInfo.m; sourceTree = "<group>"; };
+		574E849C21819FF700025550 /* LocationInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationInfo.m; sourceTree = "<group>"; };
+		574E849D21819FF700025550 /* StartUpMixModuleParameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartUpMixModuleParameter.h; sourceTree = "<group>"; };
+		574E849E21819FF700025550 /* MixModuleInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixModuleInfo.m; sourceTree = "<group>"; };
+		574E849F21819FF700025550 /* CommunicationInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommunicationInfo.h; sourceTree = "<group>"; };
+		574E84A021819FF700025550 /* AimViewControllerInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AimViewControllerInfo.h; sourceTree = "<group>"; };
+		574E84A121819FF700025550 /* LemixEngineConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LemixEngineConfig.h; sourceTree = "<group>"; };
+		574E84A221819FF700025550 /* NativePageInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativePageInfo.h; sourceTree = "<group>"; };
+		574E84A321819FF700025550 /* MixModuleInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixModuleInstance.h; sourceTree = "<group>"; };
+		574E84A421819FF700025550 /* StartUpMixModuleParameter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartUpMixModuleParameter.m; sourceTree = "<group>"; };
+		574E84A521819FF700025550 /* LocationInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationInfo.h; sourceTree = "<group>"; };
+		574E84A621819FF700025550 /* MixModuleInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixModuleInfo.h; sourceTree = "<group>"; };
+		574E84A721819FF700025550 /* LemixEngineConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LemixEngineConfig.m; sourceTree = "<group>"; };
+		574E84A821819FF700025550 /* AimViewControllerInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AimViewControllerInfo.m; sourceTree = "<group>"; };
+		574E84A921819FF700025550 /* CommunicationInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommunicationInfo.m; sourceTree = "<group>"; };
+		574E84AA21819FF700025550 /* LemixEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LemixEngine.h; sourceTree = "<group>"; };
+		574E84AB21819FF700025550 /* Lemix.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lemix.m; sourceTree = "<group>"; };
+		574E84AC21819FF700025550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74898F18EFE93D8AF9571BA5 /* Pods-lemixExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lemixExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lemixExample/Pods-lemixExample.debug.xcconfig"; sourceTree = "<group>"; };
+		8EC243FA476467E2B4DAD58F /* libPods-lemix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lemix.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C767231B9B1616BD341058 /* Pods-lemix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lemix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lemix/Pods-lemix.debug.xcconfig"; sourceTree = "<group>"; };
+		F921B01CC7C8FE08B5A126E5 /* Pods-lemixExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lemixExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-lemixExample/Pods-lemixExample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		574E839E218187C800025550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E8B32C3495FD1823DE64EF /* libPods-lemixExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574E83B5218187CA00025550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17344B1EBB660316E55C55E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0C767231B9B1616BD341058 /* Pods-lemix.debug.xcconfig */,
+				09C70F58AA09945D95CB0302 /* Pods-lemix.release.xcconfig */,
+				74898F18EFE93D8AF9571BA5 /* Pods-lemixExample.debug.xcconfig */,
+				F921B01CC7C8FE08B5A126E5 /* Pods-lemixExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4487CD851BB92A23A1D93CC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				574E846021819FF700025550 /* lemix */,
+				574E845521819C8E00025550 /* libAFNetworking.a */,
+				574E845321819C8900025550 /* libSSZipArchive.a */,
+				574E84512181965C00025550 /* liblemage.a */,
+				8EC243FA476467E2B4DAD58F /* libPods-lemix.a */,
+				0053182E185DD1D780D272FA /* libPods-lemixExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		571D09EA2182BB8F002E92EF /* lemix */ = {
+			isa = PBXGroup;
+			children = (
+				571D09EC2182BB8F002E92EF /* Core */,
+				571D0A112182BB8F002E92EF /* Util */,
+				571D0A182182BB8F002E92EF /* Enum */,
+				571D0A1B2182BB8F002E92EF /* CallBlack */,
+				571D0A1E2182BB8F002E92EF /* Standard */,
+				571D0A202182BB8F002E92EF /* Manager */,
+				571D0A232182BB8F002E92EF /* Model */,
+				571D0A342182BB8F002E92EF /* LemixEngine.h */,
+				571D09EB2182BB8F002E92EF /* LemixEngine.m */,
+				571D0A1A2182BB8F002E92EF /* Lemix.h */,
+				571D0A352182BB8F002E92EF /* Lemix.m */,
+			);
+			path = lemix;
+			sourceTree = "<group>";
+		};
+		571D09EC2182BB8F002E92EF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				571D09FA2182BB8F002E92EF /* LemixWebViewController.h */,
+				571D09ED2182BB8F002E92EF /* LemixWebViewController.m */,
+				571D09EE2182BB8F002E92EF /* Operate */,
+				571D09FB2182BB8F002E92EF /* Communication */,
+				571D0A0C2182BB8F002E92EF /* Base */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		571D09EE2182BB8F002E92EF /* Operate */ = {
+			isa = PBXGroup;
+			children = (
+				571D09EF2182BB8F002E92EF /* ui */,
+				571D09F42182BB8F002E92EF /* image */,
+				571D09F72182BB8F002E92EF /* map */,
+			);
+			path = Operate;
+			sourceTree = "<group>";
+		};
+		571D09EF2182BB8F002E92EF /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				571D09F02182BB8F002E92EF /* UiStyle.h */,
+				571D09F12182BB8F002E92EF /* UiNavigation.h */,
+				571D09F22182BB8F002E92EF /* UiStyle.m */,
+				571D09F32182BB8F002E92EF /* UiNavigation.m */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		571D09F42182BB8F002E92EF /* image */ = {
+			isa = PBXGroup;
+			children = (
+				571D09F52182BB8F002E92EF /* ImageCamera.h */,
+				571D09F62182BB8F002E92EF /* ImageCamera.m */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		571D09F72182BB8F002E92EF /* map */ = {
+			isa = PBXGroup;
+			children = (
+				571D09F92182BB8F002E92EF /* MapLocation.h */,
+				571D09F82182BB8F002E92EF /* MapLocation.m */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		571D09FB2182BB8F002E92EF /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				571D09FC2182BB8F002E92EF /* ui */,
+				571D0A032182BB8F002E92EF /* net */,
+				571D0A062182BB8F002E92EF /* image */,
+				571D0A092182BB8F002E92EF /* map */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		571D09FC2182BB8F002E92EF /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				571D09FD2182BB8F002E92EF /* ui_navigation.m */,
+				571D09FE2182BB8F002E92EF /* ui_style.m */,
+				571D09FF2182BB8F002E92EF /* ui_screen.h */,
+				571D0A002182BB8F002E92EF /* ui_navigation.h */,
+				571D0A012182BB8F002E92EF /* ui_screen.m */,
+				571D0A022182BB8F002E92EF /* ui_style.h */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		571D0A032182BB8F002E92EF /* net */ = {
+			isa = PBXGroup;
+			children = (
+				571D0A052182BB8F002E92EF /* net_http.h */,
+				571D0A042182BB8F002E92EF /* net_http.m */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		571D0A062182BB8F002E92EF /* image */ = {
+			isa = PBXGroup;
+			children = (
+				571D0A082182BB8F002E92EF /* image_camera.h */,
+				571D0A072182BB8F002E92EF /* image_camera.m */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		571D0A092182BB8F002E92EF /* map */ = {
+			isa = PBXGroup;
+			children = (
+				571D0A0A2182BB8F002E92EF /* map_location.h */,
+				571D0A0B2182BB8F002E92EF /* map_location.m */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		571D0A0C2182BB8F002E92EF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				571D0A102182BB8F002E92EF /* BaseViewController.h */,
+				571D0A0D2182BB8F002E92EF /* BaseViewController.m */,
+				571D0A0E2182BB8F002E92EF /* BaseNavigationViewController.h */,
+				571D0A0F2182BB8F002E92EF /* BaseNavigationViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		571D0A112182BB8F002E92EF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				571D0A132182BB8F002E92EF /* ColorUtil.h */,
+				571D0A152182BB8F002E92EF /* ColorUtil.m */,
+				571D0A122182BB8F002E92EF /* PushTransitionUtil.h */,
+				571D0A162182BB8F002E92EF /* PushTransitionUtil.m */,
+				571D0A142182BB8F002E92EF /* HttpUtil.h */,
+				571D0A172182BB8F002E92EF /* HttpUtil.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		571D0A182182BB8F002E92EF /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				571D0A192182BB8F002E92EF /* ViewControllerTypeEnum.h */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		571D0A1B2182BB8F002E92EF /* CallBlack */ = {
+			isa = PBXGroup;
+			children = (
+				571D0A1C2182BB8F002E92EF /* MixModuleLifeCycle.h */,
+				571D0A1D2182BB8F002E92EF /* MixModuleLifeCycle.m */,
+			);
+			path = CallBlack;
+			sourceTree = "<group>";
+		};
+		571D0A1E2182BB8F002E92EF /* Standard */ = {
+			isa = PBXGroup;
+			children = (
+				571D0A1F2182BB8F002E92EF /* WaitingPageStandard.h */,
+				572595F92186987B00A43295 /* MapLocationStandard.h */,
+			);
+			path = Standard;
+			sourceTree = "<group>";
+		};
+		571D0A202182BB8F002E92EF /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				571D0A212182BB8F002E92EF /* WebViewCacheManager.m */,
+				571D0A222182BB8F002E92EF /* WebViewCacheManager.h */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		571D0A232182BB8F002E92EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				571D0A242182BB8F002E92EF /* MixModuleInstance.m */,
+				571D0A252182BB8F002E92EF /* NativePageInfo.m */,
+				571D0A262182BB8F002E92EF /* LocationInfo.m */,
+				571D0A272182BB8F002E92EF /* StartUpMixModuleParameter.h */,
+				571D0A282182BB8F002E92EF /* MixModuleInfo.m */,
+				571D0A292182BB8F002E92EF /* CommunicationInfo.h */,
+				571D0A2A2182BB8F002E92EF /* AimViewControllerInfo.h */,
+				571D0A2B2182BB8F002E92EF /* LemixEngineConfig.h */,
+				571D0A2C2182BB8F002E92EF /* NativePageInfo.h */,
+				571D0A2D2182BB8F002E92EF /* MixModuleInstance.h */,
+				571D0A2E2182BB8F002E92EF /* StartUpMixModuleParameter.m */,
+				571D0A2F2182BB8F002E92EF /* LocationInfo.h */,
+				571D0A302182BB8F002E92EF /* MixModuleInfo.h */,
+				571D0A312182BB8F002E92EF /* LemixEngineConfig.m */,
+				571D0A322182BB8F002E92EF /* AimViewControllerInfo.m */,
+				571D0A332182BB8F002E92EF /* CommunicationInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		574E83882181879A00025550 = {
+			isa = PBXGroup;
+			children = (
+				571D09EA2182BB8F002E92EF /* lemix */,
+				574E83A2218187C800025550 /* lemixExample */,
+				574E83BB218187CA00025550 /* lemixExampleUITests */,
+				574E83932181879A00025550 /* Products */,
+				17344B1EBB660316E55C55E7 /* Pods */,
+				4487CD851BB92A23A1D93CC7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		574E83932181879A00025550 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				574E83A1218187C800025550 /* lemixExample.app */,
+				574E83B8218187CA00025550 /* lemixExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		574E83A2218187C800025550 /* lemixExample */ = {
+			isa = PBXGroup;
+			children = (
+				574E844A218189F400025550 /* lemix.min.js */,
+				574E83A3218187C800025550 /* AppDelegate.h */,
+				574E83A4218187C800025550 /* AppDelegate.m */,
+				574E844D21818A4C00025550 /* WaitingPage.h */,
+				574E844C21818A4C00025550 /* WaitingPage.m */,
+				574E83A6218187C800025550 /* ViewController.h */,
+				574E83A7218187C800025550 /* ViewController.m */,
+				574E83A9218187C800025550 /* Main.storyboard */,
+				574E83AC218187CA00025550 /* Assets.xcassets */,
+				574E83AE218187CA00025550 /* LaunchScreen.storyboard */,
+				574E83B1218187CA00025550 /* Info.plist */,
+				574E83B2218187CA00025550 /* main.m */,
+			);
+			path = lemixExample;
+			sourceTree = "<group>";
+		};
+		574E83BB218187CA00025550 /* lemixExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				574E83BC218187CA00025550 /* lemixExampleUITests.m */,
+				574E83BE218187CA00025550 /* Info.plist */,
+			);
+			path = lemixExampleUITests;
+			sourceTree = "<group>";
+		};
+		574E846021819FF700025550 /* lemix */ = {
+			isa = PBXGroup;
+			children = (
+				574E846121819FF700025550 /* LemixEngine.m */,
+				574E846221819FF700025550 /* Core */,
+				574E848721819FF700025550 /* Util */,
+				574E848E21819FF700025550 /* Enum */,
+				574E849021819FF700025550 /* Lemix.h */,
+				574E849121819FF700025550 /* CallBlack */,
+				574E849421819FF700025550 /* Standard */,
+				574E849621819FF700025550 /* Manager */,
+				574E849921819FF700025550 /* Model */,
+				574E84AA21819FF700025550 /* LemixEngine.h */,
+				574E84AB21819FF700025550 /* Lemix.m */,
+				574E84AC21819FF700025550 /* Info.plist */,
+			);
+			path = lemix;
+			sourceTree = "<group>";
+		};
+		574E846221819FF700025550 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				574E846321819FF700025550 /* LemixWebViewController.m */,
+				574E846421819FF700025550 /* Operate */,
+				574E847021819FF700025550 /* LemixWebViewController.h */,
+				574E847121819FF700025550 /* Communication */,
+				574E848221819FF700025550 /* Base */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		574E846421819FF700025550 /* Operate */ = {
+			isa = PBXGroup;
+			children = (
+				574E846521819FF700025550 /* ui */,
+				574E846A21819FF700025550 /* image */,
+				574E846D21819FF700025550 /* map */,
+			);
+			path = Operate;
+			sourceTree = "<group>";
+		};
+		574E846521819FF700025550 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				574E846621819FF700025550 /* UiStyle.h */,
+				574E846721819FF700025550 /* UiNavigation.h */,
+				574E846821819FF700025550 /* UiStyle.m */,
+				574E846921819FF700025550 /* UiNavigation.m */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		574E846A21819FF700025550 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				574E846B21819FF700025550 /* ImageCamera.h */,
+				574E846C21819FF700025550 /* ImageCamera.m */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		574E846D21819FF700025550 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				574E846E21819FF700025550 /* MapLocation.m */,
+				574E846F21819FF700025550 /* MapLocation.h */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		574E847121819FF700025550 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				574E847221819FF700025550 /* ui */,
+				574E847921819FF700025550 /* net */,
+				574E847C21819FF700025550 /* image */,
+				574E847F21819FF700025550 /* map */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		574E847221819FF700025550 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				574E847321819FF700025550 /* ui_navigation.m */,
+				574E847421819FF700025550 /* ui_style.m */,
+				574E847521819FF700025550 /* ui_screen.h */,
+				574E847621819FF700025550 /* ui_navigation.h */,
+				574E847721819FF700025550 /* ui_screen.m */,
+				574E847821819FF700025550 /* ui_style.h */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		574E847921819FF700025550 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				574E847A21819FF700025550 /* net_http.m */,
+				574E847B21819FF700025550 /* net_http.h */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		574E847C21819FF700025550 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				574E847D21819FF700025550 /* image_camera.m */,
+				574E847E21819FF700025550 /* image_camera.h */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		574E847F21819FF700025550 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				574E848021819FF700025550 /* map_location.h */,
+				574E848121819FF700025550 /* map_location.m */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		574E848221819FF700025550 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				574E848321819FF700025550 /* BaseViewController.m */,
+				574E848421819FF700025550 /* BaseNavigationViewController.h */,
+				574E848521819FF700025550 /* BaseNavigationViewController.m */,
+				574E848621819FF700025550 /* BaseViewController.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		574E848721819FF700025550 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				574E848821819FF700025550 /* PushTransitionUtil.h */,
+				574E848921819FF700025550 /* ColorUtil.h */,
+				574E848A21819FF700025550 /* HttpUtil.h */,
+				574E848B21819FF700025550 /* ColorUtil.m */,
+				574E848C21819FF700025550 /* PushTransitionUtil.m */,
+				574E848D21819FF700025550 /* HttpUtil.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		574E848E21819FF700025550 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				574E848F21819FF700025550 /* ViewControllerTypeEnum.h */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		574E849121819FF700025550 /* CallBlack */ = {
+			isa = PBXGroup;
+			children = (
+				574E849221819FF700025550 /* MixModuleLifeCycle.h */,
+				574E849321819FF700025550 /* MixModuleLifeCycle.m */,
+			);
+			path = CallBlack;
+			sourceTree = "<group>";
+		};
+		574E849421819FF700025550 /* Standard */ = {
+			isa = PBXGroup;
+			children = (
+				574E849521819FF700025550 /* WaitingPageStandard.h */,
+			);
+			path = Standard;
+			sourceTree = "<group>";
+		};
+		574E849621819FF700025550 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				574E849721819FF700025550 /* WebViewCacheManager.m */,
+				574E849821819FF700025550 /* WebViewCacheManager.h */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		574E849921819FF700025550 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				574E849A21819FF700025550 /* MixModuleInstance.m */,
+				574E849B21819FF700025550 /* NativePageInfo.m */,
+				574E849C21819FF700025550 /* LocationInfo.m */,
+				574E849D21819FF700025550 /* StartUpMixModuleParameter.h */,
+				574E849E21819FF700025550 /* MixModuleInfo.m */,
+				574E849F21819FF700025550 /* CommunicationInfo.h */,
+				574E84A021819FF700025550 /* AimViewControllerInfo.h */,
+				574E84A121819FF700025550 /* LemixEngineConfig.h */,
+				574E84A221819FF700025550 /* NativePageInfo.h */,
+				574E84A321819FF700025550 /* MixModuleInstance.h */,
+				574E84A421819FF700025550 /* StartUpMixModuleParameter.m */,
+				574E84A521819FF700025550 /* LocationInfo.h */,
+				574E84A621819FF700025550 /* MixModuleInfo.h */,
+				574E84A721819FF700025550 /* LemixEngineConfig.m */,
+				574E84A821819FF700025550 /* AimViewControllerInfo.m */,
+				574E84A921819FF700025550 /* CommunicationInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		574E83A0218187C800025550 /* lemixExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 574E83BF218187CA00025550 /* Build configuration list for PBXNativeTarget "lemixExample" */;
+			buildPhases = (
+				672004F95EC24484BE3BBB94 /* [CP] Check Pods Manifest.lock */,
+				574E839D218187C800025550 /* Sources */,
+				574E839E218187C800025550 /* Frameworks */,
+				574E839F218187C800025550 /* Resources */,
+				574E84B32181A28C00025550 /* Copy Files */,
+				571D08842181C2FA002E92EF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lemixExample;
+			productName = lemixExample;
+			productReference = 574E83A1218187C800025550 /* lemixExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		574E83B7218187CA00025550 /* lemixExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 574E83C2218187CA00025550 /* Build configuration list for PBXNativeTarget "lemixExampleUITests" */;
+			buildPhases = (
+				574E83B4218187CA00025550 /* Sources */,
+				574E83B5218187CA00025550 /* Frameworks */,
+				574E83B6218187CA00025550 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				574E83BA218187CA00025550 /* PBXTargetDependency */,
+			);
+			name = lemixExampleUITests;
+			productName = lemixExampleUITests;
+			productReference = 574E83B8218187CA00025550 /* lemixExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		574E83892181879A00025550 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = lemix;
+				TargetAttributes = {
+					574E83A0218187C800025550 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					574E83B7218187CA00025550 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 574E83A0218187C800025550;
+					};
+				};
+			};
+			buildConfigurationList = 574E838C2181879A00025550 /* Build configuration list for PBXProject "lemix" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 574E83882181879A00025550;
+			productRefGroup = 574E83932181879A00025550 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				574E83A0218187C800025550 /* lemixExample */,
+				574E83B7218187CA00025550 /* lemixExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		574E839F218187C800025550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574E844B218189F400025550 /* lemix.min.js in Resources */,
+				574E83B0218187CA00025550 /* LaunchScreen.storyboard in Resources */,
+				574E83AD218187CA00025550 /* Assets.xcassets in Resources */,
+				574E83AB218187C800025550 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574E83B6218187CA00025550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		672004F95EC24484BE3BBB94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lemixExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		574E839D218187C800025550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574E844E21818A4C00025550 /* WaitingPage.m in Sources */,
+				571D0A512182BB8F002E92EF /* Lemix.m in Sources */,
+				571D0A3B2182BB8F002E92EF /* MapLocation.m in Sources */,
+				571D0A372182BB8F002E92EF /* LemixWebViewController.m in Sources */,
+				571D0A4C2182BB8F002E92EF /* MixModuleInfo.m in Sources */,
+				571D0A3D2182BB8F002E92EF /* ui_style.m in Sources */,
+				571D0A382182BB8F002E92EF /* UiStyle.m in Sources */,
+				571D0A472182BB8F002E92EF /* MixModuleLifeCycle.m in Sources */,
+				571D0A4B2182BB8F002E92EF /* LocationInfo.m in Sources */,
+				571D0A4E2182BB8F002E92EF /* LemixEngineConfig.m in Sources */,
+				571D0A3A2182BB8F002E92EF /* ImageCamera.m in Sources */,
+				571D0A492182BB8F002E92EF /* MixModuleInstance.m in Sources */,
+				571D0A4A2182BB8F002E92EF /* NativePageInfo.m in Sources */,
+				571D0A3C2182BB8F002E92EF /* ui_navigation.m in Sources */,
+				571D0A462182BB8F002E92EF /* HttpUtil.m in Sources */,
+				571D0A432182BB8F002E92EF /* BaseNavigationViewController.m in Sources */,
+				571D0A422182BB8F002E92EF /* BaseViewController.m in Sources */,
+				571D0A402182BB8F002E92EF /* image_camera.m in Sources */,
+				571D0A3F2182BB8F002E92EF /* net_http.m in Sources */,
+				571D0A362182BB8F002E92EF /* LemixEngine.m in Sources */,
+				571D0A452182BB8F002E92EF /* PushTransitionUtil.m in Sources */,
+				571D0A4F2182BB8F002E92EF /* AimViewControllerInfo.m in Sources */,
+				574E83A8218187C800025550 /* ViewController.m in Sources */,
+				571D0A482182BB8F002E92EF /* WebViewCacheManager.m in Sources */,
+				574E83B3218187CA00025550 /* main.m in Sources */,
+				571D0A3E2182BB8F002E92EF /* ui_screen.m in Sources */,
+				574E83A5218187C800025550 /* AppDelegate.m in Sources */,
+				571D0A442182BB8F002E92EF /* ColorUtil.m in Sources */,
+				571D0A392182BB8F002E92EF /* UiNavigation.m in Sources */,
+				571D0A502182BB8F002E92EF /* CommunicationInfo.m in Sources */,
+				571D0A4D2182BB8F002E92EF /* StartUpMixModuleParameter.m in Sources */,
+				571D0A412182BB8F002E92EF /* map_location.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574E83B4218187CA00025550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574E83BD218187CA00025550 /* lemixExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		574E83BA218187CA00025550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 574E83A0218187C800025550 /* lemixExample */;
+			targetProxy = 574E83B9218187CA00025550 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		574E83A9218187C800025550 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				574E83AA218187C800025550 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		574E83AE218187CA00025550 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				574E83AF218187CA00025550 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		574E83982181879A00025550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = lemixExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		574E83992181879A00025550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = lemixExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		574E83C0218187CA00025550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74898F18EFE93D8AF9571BA5 /* Pods-lemixExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5P4CU52TD;
+				INFOPLIST_FILE = lemixExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"ExternalAccessory\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-w",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhongwang.zwt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		574E83C1218187CA00025550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F921B01CC7C8FE08B5A126E5 /* Pods-lemixExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5P4CU52TD;
+				INFOPLIST_FILE = lemixExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"ExternalAccessory\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-w",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhongwang.zwt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		574E83C3218187CA00025550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5P4CU52TD;
+				INFOPLIST_FILE = lemixExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.lemonit.lemixExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lemixExample;
+			};
+			name = Debug;
+		};
+		574E83C4218187CA00025550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5P4CU52TD;
+				INFOPLIST_FILE = lemixExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.lemonit.lemixExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lemixExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		574E838C2181879A00025550 /* Build configuration list for PBXProject "lemix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574E83982181879A00025550 /* Debug */,
+				574E83992181879A00025550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		574E83BF218187CA00025550 /* Build configuration list for PBXNativeTarget "lemixExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574E83C0218187CA00025550 /* Debug */,
+				574E83C1218187CA00025550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		574E83C2218187CA00025550 /* Build configuration list for PBXNativeTarget "lemixExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574E83C3218187CA00025550 /* Debug */,
+				574E83C4218187CA00025550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 574E83892181879A00025550 /* Project object */;
+}

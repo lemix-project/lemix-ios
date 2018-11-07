@@ -1,0 +1,11 @@
+
+platform :ios, '8.0'
+target 'lemixExample' do
+
+	pod 'AMapLocation'
+	pod 'SSZipArchive'
+	pod 'AFNetworking'
+	pod 'lemage'
+
+
+end
