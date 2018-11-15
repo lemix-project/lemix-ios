@@ -8,6 +8,7 @@
 
 #import "BaseViewController.h"
 #import "ColorUtil.h"
+#define KIsiPhoneX ([[UIDevice currentDevice].systemVersion integerValue] >= 11 ?([UIApplication sharedApplication].windows[0].safeAreaInsets.bottom>0) : NO)
 @interface BaseViewController ()
 @property UIInterfaceOrientationMask interfaceOrientationMask;
 
@@ -32,11 +33,11 @@
     [self.navigationController setNavigationBarHidden:YES];
     
     
-    self.navigationBarBGView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 64)];
+    self.navigationBarBGView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, KIsiPhoneX?84:64)];
     [self.view addSubview:self.navigationBarBGView];
     
     
-    self.navigationBar= [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 44)];
+    self.navigationBar= [[UINavigationBar alloc] initWithFrame:CGRectMake(0, KIsiPhoneX?40:20, self.view.frame.size.width, 44)];
     self.navigationBar.translucent = true;
     [self.navigationBar setBackgroundImage:[[UIImage alloc]init] forBarMetrics:UIBarMetricsDefault];
     [self.view addSubview:self.navigationBar];
@@ -93,9 +94,9 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-//    AppDelegate *appdelegate=(AppDelegate *)[UIApplication sharedApplication].delegate;
-//
-//    self.interfaceOrientationMask = appdelegate.interfaceOrientationMask;
+    //    AppDelegate *appdelegate=(AppDelegate *)[UIApplication sharedApplication].delegate;
+    //
+    //    self.interfaceOrientationMask = appdelegate.interfaceOrientationMask;
     
     
     
@@ -119,7 +120,7 @@
                 break;
             case 4:
                 if (@available(iOS 11.0,*)) {
-                [[UIApplication sharedApplication] setStatusBarStyle:[@[@"dark",@"light"] indexOfObject:self.configDic[key]] animated:YES];
+                    [[UIApplication sharedApplication] setStatusBarStyle:[@[@"dark",@"light"] indexOfObject:self.configDic[key]] animated:YES];
                 }
                 break;
             case 5:
@@ -142,64 +143,64 @@
 - (void)forceOrientationReturn{
     
     
-//    AppDelegate *appdelegate=(AppDelegate *)[UIApplication sharedApplication].delegate;
-//    if (self.interfaceOrientationMask != appdelegate.interfaceOrientationMask) {
-//        [appdelegate setInterfaceOrientationMask:self.interfaceOrientationMask];
-//        [appdelegate application:[UIApplication sharedApplication] supportedInterfaceOrientationsForWindow:self.view.window];
-//        UIInterfaceOrientation interfaceOrientation = UIInterfaceOrientationPortrait;
-//        switch (self.interfaceOrientationMask) {
-//            case UIInterfaceOrientationMaskPortrait:
-//                interfaceOrientation = UIInterfaceOrientationPortrait;
-//                break;
-//            case UIInterfaceOrientationMaskLandscapeLeft:
-//                interfaceOrientation = UIInterfaceOrientationLandscapeLeft;
-//                break;
-//            case UIInterfaceOrientationMaskLandscapeRight:
-//                interfaceOrientation = UIInterfaceOrientationLandscapeRight;
-//                break;
-//
-//            default:
-//                break;
-//        }
-//        //强制翻转屏幕为竖屏
-//        [[UIDevice currentDevice] setValue:@(interfaceOrientation) forKey:@"orientation"];
-//        //刷新
-//        [UIViewController attemptRotationToDeviceOrientation];
-//    }
+    //    AppDelegate *appdelegate=(AppDelegate *)[UIApplication sharedApplication].delegate;
+    //    if (self.interfaceOrientationMask != appdelegate.interfaceOrientationMask) {
+    //        [appdelegate setInterfaceOrientationMask:self.interfaceOrientationMask];
+    //        [appdelegate application:[UIApplication sharedApplication] supportedInterfaceOrientationsForWindow:self.view.window];
+    //        UIInterfaceOrientation interfaceOrientation = UIInterfaceOrientationPortrait;
+    //        switch (self.interfaceOrientationMask) {
+    //            case UIInterfaceOrientationMaskPortrait:
+    //                interfaceOrientation = UIInterfaceOrientationPortrait;
+    //                break;
+    //            case UIInterfaceOrientationMaskLandscapeLeft:
+    //                interfaceOrientation = UIInterfaceOrientationLandscapeLeft;
+    //                break;
+    //            case UIInterfaceOrientationMaskLandscapeRight:
+    //                interfaceOrientation = UIInterfaceOrientationLandscapeRight;
+    //                break;
+    //
+    //            default:
+    //                break;
+    //        }
+    //        //强制翻转屏幕为竖屏
+    //        [[UIDevice currentDevice] setValue:@(interfaceOrientation) forKey:@"orientation"];
+    //        //刷新
+    //        [UIViewController attemptRotationToDeviceOrientation];
+    //    }
     
 }
 // 强制横屏
 - (void)forceOrientationChange:(NSString *)direction{
-//    AppDelegate *appdelegate=(AppDelegate *)[UIApplication sharedApplication].delegate;
-//    UIInterfaceOrientationMask interfaceOrientationMask = UIInterfaceOrientationMaskPortrait;
-//    UIInterfaceOrientation interfaceOrientation = UIInterfaceOrientationPortrait;
-//    switch ([@[@"left",@"right",@"bottom"] indexOfObject:direction]) {
-//        case 0:
-//            interfaceOrientationMask = UIInterfaceOrientationMaskLandscapeLeft;
-//            interfaceOrientation = UIInterfaceOrientationLandscapeLeft;
-//            break;
-//        case 1:
-//            interfaceOrientationMask = UIInterfaceOrientationMaskLandscapeRight;
-//            interfaceOrientation = UIInterfaceOrientationLandscapeRight;
-//            break;
-//        case 2:
-//            interfaceOrientationMask = UIInterfaceOrientationMaskPortrait;
-//            interfaceOrientation = UIInterfaceOrientationPortrait;
-//            break;
-//            
-//        default:
-//            break;
-//    }
-//    
-//    
-//    [appdelegate setInterfaceOrientationMask:interfaceOrientationMask];
-//    [appdelegate application:[UIApplication sharedApplication] supportedInterfaceOrientationsForWindow:self.view.window];
-//    
-//    
-//    //强制翻转屏幕
-//    [[UIDevice currentDevice] setValue:@(interfaceOrientation) forKey:@"orientation"];
-//    //刷新
-//    [UIViewController attemptRotationToDeviceOrientation];
+    //    AppDelegate *appdelegate=(AppDelegate *)[UIApplication sharedApplication].delegate;
+    //    UIInterfaceOrientationMask interfaceOrientationMask = UIInterfaceOrientationMaskPortrait;
+    //    UIInterfaceOrientation interfaceOrientation = UIInterfaceOrientationPortrait;
+    //    switch ([@[@"left",@"right",@"bottom"] indexOfObject:direction]) {
+    //        case 0:
+    //            interfaceOrientationMask = UIInterfaceOrientationMaskLandscapeLeft;
+    //            interfaceOrientation = UIInterfaceOrientationLandscapeLeft;
+    //            break;
+    //        case 1:
+    //            interfaceOrientationMask = UIInterfaceOrientationMaskLandscapeRight;
+    //            interfaceOrientation = UIInterfaceOrientationLandscapeRight;
+    //            break;
+    //        case 2:
+    //            interfaceOrientationMask = UIInterfaceOrientationMaskPortrait;
+    //            interfaceOrientation = UIInterfaceOrientationPortrait;
+    //            break;
+    //
+    //        default:
+    //            break;
+    //    }
+    //
+    //
+    //    [appdelegate setInterfaceOrientationMask:interfaceOrientationMask];
+    //    [appdelegate application:[UIApplication sharedApplication] supportedInterfaceOrientationsForWindow:self.view.window];
+    //
+    //
+    //    //强制翻转屏幕
+    //    [[UIDevice currentDevice] setValue:@(interfaceOrientation) forKey:@"orientation"];
+    //    //刷新
+    //    [UIViewController attemptRotationToDeviceOrientation];
 }
 
 
@@ -242,14 +243,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 
 
