@@ -44,6 +44,18 @@
 		574E83BD218187CA00025550 /* lemixExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 574E83BC218187CA00025550 /* lemixExampleUITests.m */; };
 		574E844B218189F400025550 /* lemix.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 574E844A218189F400025550 /* lemix.min.js */; };
 		574E844E21818A4C00025550 /* WaitingPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 574E844C21818A4C00025550 /* WaitingPage.m */; };
+		578E733F21C2123C00AB845E /* Lemoncs.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E733E21C2123C00AB845E /* Lemoncs.m */; };
+		578E734221C212A600AB845E /* ScanQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E734121C212A600AB845E /* ScanQRCodeViewController.m */; };
+		578E734521C213A300AB845E /* QRCodeBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E734421C213A300AB845E /* QRCodeBackgroundView.m */; };
+		578E734821C213B400AB845E /* QRCodeScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E734721C213B400AB845E /* QRCodeScanView.m */; };
+		578E734B21C2331300AB845E /* image_code.m in Sources */ = {isa = PBXBuildFile; fileRef = 578E734A21C2331300AB845E /* image_code.m */; };
+		57CA893C21C39ECD00F4FD7A /* DataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CA893B21C39ECD00F4FD7A /* DataStorage.m */; };
+		57CA893F21C39EF700F4FD7A /* data_storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CA893E21C39EF700F4FD7A /* data_storage.m */; };
+		57DD1E1921C894E100224ED1 /* biometrics_check.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DD1E1821C894E100224ED1 /* biometrics_check.m */; };
+		57DD1E1E21C895DB00224ED1 /* BiometricsCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DD1E1D21C895DB00224ED1 /* BiometricsCheck.m */; };
+		57EF1C2221A690530052F2AC /* call_customs.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF1C2121A690530052F2AC /* call_customs.m */; };
+		57EF1C2621A698D90052F2AC /* CallCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF1C2521A698D90052F2AC /* CallCustom.m */; };
+		57EF1C2921A69F880052F2AC /* webCallCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF1C2821A69F880052F2AC /* webCallCustom.m */; };
 		E1E8B32C3495FD1823DE64EF /* libPods-lemixExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0053182E185DD1D780D272FA /* libPods-lemixExample.a */; };
 /* End PBXBuildFile section */
 
@@ -220,6 +232,31 @@
 		574E84AA21819FF700025550 /* LemixEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LemixEngine.h; sourceTree = "<group>"; };
 		574E84AB21819FF700025550 /* Lemix.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lemix.m; sourceTree = "<group>"; };
 		574E84AC21819FF700025550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578E733D21C2123C00AB845E /* Lemoncs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lemoncs.h; sourceTree = "<group>"; };
+		578E733E21C2123C00AB845E /* Lemoncs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lemoncs.m; sourceTree = "<group>"; };
+		578E734021C212A600AB845E /* ScanQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanQRCodeViewController.h; sourceTree = "<group>"; };
+		578E734121C212A600AB845E /* ScanQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanQRCodeViewController.m; sourceTree = "<group>"; };
+		578E734321C213A300AB845E /* QRCodeBackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeBackgroundView.h; sourceTree = "<group>"; };
+		578E734421C213A300AB845E /* QRCodeBackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeBackgroundView.m; sourceTree = "<group>"; };
+		578E734621C213B400AB845E /* QRCodeScanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeScanView.h; sourceTree = "<group>"; };
+		578E734721C213B400AB845E /* QRCodeScanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeScanView.m; sourceTree = "<group>"; };
+		578E734921C2331300AB845E /* image_code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = image_code.h; sourceTree = "<group>"; };
+		578E734A21C2331300AB845E /* image_code.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = image_code.m; sourceTree = "<group>"; };
+		57CA893A21C39ECD00F4FD7A /* DataStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStorage.h; sourceTree = "<group>"; };
+		57CA893B21C39ECD00F4FD7A /* DataStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStorage.m; sourceTree = "<group>"; };
+		57CA893D21C39EF700F4FD7A /* data_storage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = data_storage.h; sourceTree = "<group>"; };
+		57CA893E21C39EF700F4FD7A /* data_storage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = data_storage.m; sourceTree = "<group>"; };
+		57DD1E1721C894E100224ED1 /* biometrics_check.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = biometrics_check.h; sourceTree = "<group>"; };
+		57DD1E1821C894E100224ED1 /* biometrics_check.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = biometrics_check.m; sourceTree = "<group>"; };
+		57DD1E1C21C895DB00224ED1 /* BiometricsCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BiometricsCheck.h; sourceTree = "<group>"; };
+		57DD1E1D21C895DB00224ED1 /* BiometricsCheck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BiometricsCheck.m; sourceTree = "<group>"; };
+		57EF1C1E21A68AC40052F2AC /* CallCustomFuncStandard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallCustomFuncStandard.h; sourceTree = "<group>"; };
+		57EF1C2021A690530052F2AC /* call_customs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = call_customs.h; sourceTree = "<group>"; };
+		57EF1C2121A690530052F2AC /* call_customs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = call_customs.m; sourceTree = "<group>"; };
+		57EF1C2421A698D90052F2AC /* CallCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallCustom.h; sourceTree = "<group>"; };
+		57EF1C2521A698D90052F2AC /* CallCustom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallCustom.m; sourceTree = "<group>"; };
+		57EF1C2721A69F880052F2AC /* webCallCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = webCallCustom.h; sourceTree = "<group>"; };
+		57EF1C2821A69F880052F2AC /* webCallCustom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = webCallCustom.m; sourceTree = "<group>"; };
 		74898F18EFE93D8AF9571BA5 /* Pods-lemixExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lemixExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lemixExample/Pods-lemixExample.debug.xcconfig"; sourceTree = "<group>"; };
 		8EC243FA476467E2B4DAD58F /* libPods-lemix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lemix.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C767231B9B1616BD341058 /* Pods-lemix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lemix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lemix/Pods-lemix.debug.xcconfig"; sourceTree = "<group>"; };
@@ -272,6 +309,8 @@
 		571D09EA2182BB8F002E92EF /* lemix */ = {
 			isa = PBXGroup;
 			children = (
+				578E733621C1DE1F00AB845E /* ViewController */,
+				578E732F21C10C3E00AB845E /* View */,
 				571D09EC2182BB8F002E92EF /* Core */,
 				571D0A112182BB8F002E92EF /* Util */,
 				571D0A182182BB8F002E92EF /* Enum */,
@@ -283,6 +322,8 @@
 				571D09EB2182BB8F002E92EF /* LemixEngine.m */,
 				571D0A1A2182BB8F002E92EF /* Lemix.h */,
 				571D0A352182BB8F002E92EF /* Lemix.m */,
+				578E733D21C2123C00AB845E /* Lemoncs.h */,
+				578E733E21C2123C00AB845E /* Lemoncs.m */,
 			);
 			path = lemix;
 			sourceTree = "<group>";
@@ -302,6 +343,9 @@
 		571D09EE2182BB8F002E92EF /* Operate */ = {
 			isa = PBXGroup;
 			children = (
+				57DD1E1B21C895B800224ED1 /* biometrics */,
+				57CA894121C3AD1900F4FD7A /* data */,
+				57EF1C2321A698C00052F2AC /* custom */,
 				571D09EF2182BB8F002E92EF /* ui */,
 				571D09F42182BB8F002E92EF /* image */,
 				571D09F72182BB8F002E92EF /* map */,
@@ -313,8 +357,8 @@
 			isa = PBXGroup;
 			children = (
 				571D09F02182BB8F002E92EF /* UiStyle.h */,
-				571D09F12182BB8F002E92EF /* UiNavigation.h */,
 				571D09F22182BB8F002E92EF /* UiStyle.m */,
+				571D09F12182BB8F002E92EF /* UiNavigation.h */,
 				571D09F32182BB8F002E92EF /* UiNavigation.m */,
 			);
 			path = ui;
@@ -341,6 +385,9 @@
 		571D09FB2182BB8F002E92EF /* Communication */ = {
 			isa = PBXGroup;
 			children = (
+				57DD1E1621C8944200224ED1 /* biometrics */,
+				57CA894021C3AC9700F4FD7A /* data */,
+				57EF1C1F21A6902F0052F2AC /* custom */,
 				571D09FC2182BB8F002E92EF /* ui */,
 				571D0A032182BB8F002E92EF /* net */,
 				571D0A062182BB8F002E92EF /* image */,
@@ -352,12 +399,12 @@
 		571D09FC2182BB8F002E92EF /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				571D0A002182BB8F002E92EF /* ui_navigation.h */,
 				571D09FD2182BB8F002E92EF /* ui_navigation.m */,
+				571D0A022182BB8F002E92EF /* ui_style.h */,
 				571D09FE2182BB8F002E92EF /* ui_style.m */,
 				571D09FF2182BB8F002E92EF /* ui_screen.h */,
-				571D0A002182BB8F002E92EF /* ui_navigation.h */,
 				571D0A012182BB8F002E92EF /* ui_screen.m */,
-				571D0A022182BB8F002E92EF /* ui_style.h */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -376,6 +423,8 @@
 			children = (
 				571D0A082182BB8F002E92EF /* image_camera.h */,
 				571D0A072182BB8F002E92EF /* image_camera.m */,
+				578E734921C2331300AB845E /* image_code.h */,
+				578E734A21C2331300AB845E /* image_code.m */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -435,6 +484,7 @@
 			children = (
 				571D0A1F2182BB8F002E92EF /* WaitingPageStandard.h */,
 				572595F92186987B00A43295 /* MapLocationStandard.h */,
+				57EF1C1E21A68AC40052F2AC /* CallCustomFuncStandard.h */,
 			);
 			path = Standard;
 			sourceTree = "<group>";
@@ -442,8 +492,8 @@
 		571D0A202182BB8F002E92EF /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				571D0A212182BB8F002E92EF /* WebViewCacheManager.m */,
 				571D0A222182BB8F002E92EF /* WebViewCacheManager.h */,
+				571D0A212182BB8F002E92EF /* WebViewCacheManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -451,22 +501,22 @@
 		571D0A232182BB8F002E92EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				571D0A242182BB8F002E92EF /* MixModuleInstance.m */,
-				571D0A252182BB8F002E92EF /* NativePageInfo.m */,
+				571D0A2F2182BB8F002E92EF /* LocationInfo.h */,
 				571D0A262182BB8F002E92EF /* LocationInfo.m */,
 				571D0A272182BB8F002E92EF /* StartUpMixModuleParameter.h */,
+				571D0A2E2182BB8F002E92EF /* StartUpMixModuleParameter.m */,
+				571D0A302182BB8F002E92EF /* MixModuleInfo.h */,
 				571D0A282182BB8F002E92EF /* MixModuleInfo.m */,
 				571D0A292182BB8F002E92EF /* CommunicationInfo.h */,
-				571D0A2A2182BB8F002E92EF /* AimViewControllerInfo.h */,
-				571D0A2B2182BB8F002E92EF /* LemixEngineConfig.h */,
-				571D0A2C2182BB8F002E92EF /* NativePageInfo.h */,
-				571D0A2D2182BB8F002E92EF /* MixModuleInstance.h */,
-				571D0A2E2182BB8F002E92EF /* StartUpMixModuleParameter.m */,
-				571D0A2F2182BB8F002E92EF /* LocationInfo.h */,
-				571D0A302182BB8F002E92EF /* MixModuleInfo.h */,
-				571D0A312182BB8F002E92EF /* LemixEngineConfig.m */,
-				571D0A322182BB8F002E92EF /* AimViewControllerInfo.m */,
 				571D0A332182BB8F002E92EF /* CommunicationInfo.m */,
+				571D0A2A2182BB8F002E92EF /* AimViewControllerInfo.h */,
+				571D0A322182BB8F002E92EF /* AimViewControllerInfo.m */,
+				571D0A2B2182BB8F002E92EF /* LemixEngineConfig.h */,
+				571D0A312182BB8F002E92EF /* LemixEngineConfig.m */,
+				571D0A2C2182BB8F002E92EF /* NativePageInfo.h */,
+				571D0A252182BB8F002E92EF /* NativePageInfo.m */,
+				571D0A2D2182BB8F002E92EF /* MixModuleInstance.h */,
+				571D0A242182BB8F002E92EF /* MixModuleInstance.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -498,6 +548,8 @@
 				574E844A218189F400025550 /* lemix.min.js */,
 				574E83A3218187C800025550 /* AppDelegate.h */,
 				574E83A4218187C800025550 /* AppDelegate.m */,
+				57EF1C2721A69F880052F2AC /* webCallCustom.h */,
+				57EF1C2821A69F880052F2AC /* webCallCustom.m */,
 				574E844D21818A4C00025550 /* WaitingPage.h */,
 				574E844C21818A4C00025550 /* WaitingPage.m */,
 				574E83A6218187C800025550 /* ViewController.h */,
@@ -722,6 +774,80 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		578E732F21C10C3E00AB845E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				578E734321C213A300AB845E /* QRCodeBackgroundView.h */,
+				578E734421C213A300AB845E /* QRCodeBackgroundView.m */,
+				578E734621C213B400AB845E /* QRCodeScanView.h */,
+				578E734721C213B400AB845E /* QRCodeScanView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		578E733621C1DE1F00AB845E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				578E734021C212A600AB845E /* ScanQRCodeViewController.h */,
+				578E734121C212A600AB845E /* ScanQRCodeViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		57CA894021C3AC9700F4FD7A /* data */ = {
+			isa = PBXGroup;
+			children = (
+				57CA893D21C39EF700F4FD7A /* data_storage.h */,
+				57CA893E21C39EF700F4FD7A /* data_storage.m */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		57CA894121C3AD1900F4FD7A /* data */ = {
+			isa = PBXGroup;
+			children = (
+				57CA893A21C39ECD00F4FD7A /* DataStorage.h */,
+				57CA893B21C39ECD00F4FD7A /* DataStorage.m */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		57DD1E1621C8944200224ED1 /* biometrics */ = {
+			isa = PBXGroup;
+			children = (
+				57DD1E1721C894E100224ED1 /* biometrics_check.h */,
+				57DD1E1821C894E100224ED1 /* biometrics_check.m */,
+			);
+			path = biometrics;
+			sourceTree = "<group>";
+		};
+		57DD1E1B21C895B800224ED1 /* biometrics */ = {
+			isa = PBXGroup;
+			children = (
+				57DD1E1C21C895DB00224ED1 /* BiometricsCheck.h */,
+				57DD1E1D21C895DB00224ED1 /* BiometricsCheck.m */,
+			);
+			path = biometrics;
+			sourceTree = "<group>";
+		};
+		57EF1C1F21A6902F0052F2AC /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				57EF1C2021A690530052F2AC /* call_customs.h */,
+				57EF1C2121A690530052F2AC /* call_customs.m */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+		57EF1C2321A698C00052F2AC /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				57EF1C2421A698D90052F2AC /* CallCustom.h */,
+				57EF1C2521A698D90052F2AC /* CallCustom.m */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -855,15 +981,23 @@
 				571D0A512182BB8F002E92EF /* Lemix.m in Sources */,
 				571D0A3B2182BB8F002E92EF /* MapLocation.m in Sources */,
 				571D0A372182BB8F002E92EF /* LemixWebViewController.m in Sources */,
+				57CA893F21C39EF700F4FD7A /* data_storage.m in Sources */,
+				57CA893C21C39ECD00F4FD7A /* DataStorage.m in Sources */,
+				578E734B21C2331300AB845E /* image_code.m in Sources */,
 				571D0A4C2182BB8F002E92EF /* MixModuleInfo.m in Sources */,
 				571D0A3D2182BB8F002E92EF /* ui_style.m in Sources */,
+				578E734521C213A300AB845E /* QRCodeBackgroundView.m in Sources */,
 				571D0A382182BB8F002E92EF /* UiStyle.m in Sources */,
 				571D0A472182BB8F002E92EF /* MixModuleLifeCycle.m in Sources */,
 				571D0A4B2182BB8F002E92EF /* LocationInfo.m in Sources */,
+				578E733F21C2123C00AB845E /* Lemoncs.m in Sources */,
+				57EF1C2221A690530052F2AC /* call_customs.m in Sources */,
 				571D0A4E2182BB8F002E92EF /* LemixEngineConfig.m in Sources */,
 				571D0A3A2182BB8F002E92EF /* ImageCamera.m in Sources */,
+				57EF1C2621A698D90052F2AC /* CallCustom.m in Sources */,
 				571D0A492182BB8F002E92EF /* MixModuleInstance.m in Sources */,
 				571D0A4A2182BB8F002E92EF /* NativePageInfo.m in Sources */,
+				57EF1C2921A69F880052F2AC /* webCallCustom.m in Sources */,
 				571D0A3C2182BB8F002E92EF /* ui_navigation.m in Sources */,
 				571D0A462182BB8F002E92EF /* HttpUtil.m in Sources */,
 				571D0A432182BB8F002E92EF /* BaseNavigationViewController.m in Sources */,
@@ -871,13 +1005,17 @@
 				571D0A402182BB8F002E92EF /* image_camera.m in Sources */,
 				571D0A3F2182BB8F002E92EF /* net_http.m in Sources */,
 				571D0A362182BB8F002E92EF /* LemixEngine.m in Sources */,
+				578E734221C212A600AB845E /* ScanQRCodeViewController.m in Sources */,
 				571D0A452182BB8F002E92EF /* PushTransitionUtil.m in Sources */,
 				571D0A4F2182BB8F002E92EF /* AimViewControllerInfo.m in Sources */,
+				57DD1E1E21C895DB00224ED1 /* BiometricsCheck.m in Sources */,
+				578E734821C213B400AB845E /* QRCodeScanView.m in Sources */,
 				574E83A8218187C800025550 /* ViewController.m in Sources */,
 				571D0A482182BB8F002E92EF /* WebViewCacheManager.m in Sources */,
 				574E83B3218187CA00025550 /* main.m in Sources */,
 				571D0A3E2182BB8F002E92EF /* ui_screen.m in Sources */,
 				574E83A5218187C800025550 /* AppDelegate.m in Sources */,
+				57DD1E1921C894E100224ED1 /* biometrics_check.m in Sources */,
 				571D0A442182BB8F002E92EF /* ColorUtil.m in Sources */,
 				571D0A392182BB8F002E92EF /* UiNavigation.m in Sources */,
 				571D0A502182BB8F002E92EF /* CommunicationInfo.m in Sources */,

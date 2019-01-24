@@ -109,7 +109,14 @@
             MixModuleInstance *instance = _instanceList[i];
             if ([instance.mixModuleInfo.mixModuleIdentifier isEqualToString:moduleParameter.moduleKey]&&[instance.mixModuleInfo.packageTime isEqualToString:moduleParameter.packageTime]) {
                 [_instanceList exchangeObjectAtIndex:i withObjectAtIndex:_instanceList.count-1];
-                [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:instance.uiStackObj animated:YES completion:^{
+                BaseNavigationViewController *lemixNavi = [[BaseNavigationViewController alloc] initWithRootViewController:self.config.waitingPage];
+                lemixNavi.lemixEngine = self;
+                lemixNavi.instanceKey = [NSString stringWithFormat:@"%@-%@",moduleParameter.moduleKey,moduleParameter.packageTime];
+                
+                [self.config.waitingPage onWaiting:instance.mixModuleInfo];
+                [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:lemixNavi animated:YES completion:^{
+                    
+                    [self.httpManager StartupMixModule:self.config mixModuleInfo:instance.mixModuleInfo engineName:self.engineName startUpMixModuleParameter:moduleParameter];
                     moduleLifeCycle.onShow();
                 }];
                 return;
@@ -122,14 +129,14 @@
         BaseNavigationViewController *lemixNavi = [[BaseNavigationViewController alloc] initWithRootViewController:self.config.waitingPage];
         lemixNavi.lemixEngine = self;
         lemixNavi.instanceKey = [NSString stringWithFormat:@"%@-%@",moduleParameter.moduleKey,moduleParameter.packageTime];
+        [self.config.waitingPage onWaiting:moduleInfo];
         [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:lemixNavi animated:YES completion:^{
-            [self.config.waitingPage onWaiting:moduleInfo];
             
             [self.httpManager StartupMixModule:self.config mixModuleInfo:moduleInfo engineName:self.engineName startUpMixModuleParameter:moduleParameter];
             moduleLifeCycle.onShow();
         }];
         MixModuleInstance *moduleInstance = [[MixModuleInstance alloc] init];
-        moduleInstance.uiStackObj = _config.waitingPage.navigationController;
+        moduleInstance.uiStackObj = lemixNavi;
         moduleInstance.mixModuleInfo = moduleInfo;
         moduleInstance.mixModuleLifeCycle = moduleLifeCycle;
 //        [_moduleInstanceDic setObject:moduleInstance forKey:[NSString stringWithFormat:@"%@-%@",moduleParameter.moduleKey,moduleParameter.packageTime]];

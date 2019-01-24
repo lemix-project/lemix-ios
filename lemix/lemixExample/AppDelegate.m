@@ -13,6 +13,7 @@
 #import "WebViewCacheManager.h"
 #import "NSUrlProtocol+Lemage.h"
 #import "LemageURLProtocol.h"
+#import "webCallCustom.h"
 
 @interface AppDelegate ()<AMapLocationManagerDelegate>
 
@@ -30,6 +31,7 @@
     newConfig.workspacePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
     newConfig.tempPath = NSTemporaryDirectory();
     newConfig.mapLocationOBJ = self;
+    newConfig.callCustomFuncOBJ = self;
     [Lemix startWork:newConfig];
     [Lemix defaultEngine];
     [self.window makeKeyWindow];
@@ -48,7 +50,7 @@
     //   逆地理请求超时时间，最低2s，此处设置为10s
     self.locationManager.reGeocodeTimeout = 2;
     self.locationManager.delegate = self;
-    
+    NSLog(@"%@",[NSString stringWithFormat:@"%@",@{@"1":@"2"}]);
     return YES;
 }
 
@@ -102,6 +104,14 @@
     self.updateLocation?self.updateLocation(locationInfo):nil;
     
     
+}
+
+- (void)callCustomFuncForData:(NSDictionary *)data responce:(void (^)(id _Nonnull))responce{
+    if ([data[@"type"] isEqualToString:@"getCode"]) {
+        [webCallCustom getCode:data responce:^(id  _Nonnull callback) {
+            responce(callback);
+        }];
+    }
 }
 
 // window支持的屏幕显示方向

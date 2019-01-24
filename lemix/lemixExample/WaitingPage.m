@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSLog(@"123");
     self.view.backgroundColor = [UIColor whiteColor];
 
     UIButton *tempBtn = [UIButton buttonWithType:UIButtonTypeCustom];

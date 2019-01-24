@@ -21,6 +21,7 @@
     AimViewControllerInfo *aimViewControllerInfo  = [[AimViewControllerInfo alloc] init];
     aimViewControllerInfo.aim = info.params[@"aim"];
     aimViewControllerInfo.type = info.params[@"type"];
+    aimViewControllerInfo.json = info.params[@"config"];
     return aimViewControllerInfo;
 }
 

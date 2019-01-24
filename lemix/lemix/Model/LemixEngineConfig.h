@@ -9,6 +9,7 @@
 #import "WaitingPageStandard.h"
 #import "MapLocationStandard.h"
 #import <UIKit/UIKit.h>
+#import "CallCustomFuncStandard.h"
 //NS_ASSUME_NONNULL_BEGIN
 
 @interface LemixEngineConfig : NSObject
@@ -29,6 +30,10 @@
  实现定位方法
  */
 @property id<MapLocationStandard>mapLocationOBJ;
+/**
+ 实现自定义方法
+ */
+@property id<CallCustomFuncStandard>callCustomFuncOBJ;
 @end
 
 //NS_ASSUME_NONNULL_END

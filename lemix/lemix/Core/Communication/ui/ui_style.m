@@ -33,4 +33,14 @@
 - (void)setStatusBarStyle:(CommunicationInfo *)info{
     [UiStyle setStatusBarStyle:info.params[@"style"]];
 }
+- (void)getNavigationBarHeight:(CommunicationInfo *)info{
+    NSString *callJSString = [NSString stringWithFormat:@"__load_callback('%@','%f')",info.params[@"success"],[[UIApplication sharedApplication] statusBarFrame].size.height];
+    [info.controller.webView evaluateJavaScript:callJSString completionHandler:^(id resultObject, NSError * _Nullable error) {
+        if (!error){
+            NSLog(@"OC调 JS成功");
+        }else{
+            NSLog(@"OC调 JS 失败");
+        }
+    }];
+}
 @end

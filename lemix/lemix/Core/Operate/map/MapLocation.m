@@ -33,10 +33,7 @@
                         NSLog(@"OC调 JS 失败");
                     }
                 }];
-        
     }];
-
-
 }
 
 +(void)startUpdatingLocation:(BaseViewController *)viewController distanceFilter:(NSInteger)distanceFilter success:(NSString *)success failed:(NSString *)failed{
@@ -64,8 +61,6 @@
             }
         }];
     };
-    
-
 }
 
 +(void)stopUpdatingLocation:(BaseViewController *)viewController{

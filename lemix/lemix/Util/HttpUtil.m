@@ -20,8 +20,7 @@
 - (void)getDataWithURL:(NSString *)url
             parameters:(NSDictionary *)parameters
                success:(void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable responseObject))success
-               failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure
-{
+               failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure{
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:url parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
         success(task,responseObject);
@@ -29,21 +28,18 @@
         NSLog(@"%@",error); //这里打印错误信息
         failure(task,error);
     }];
-    
 }
 
 - (void)postDataWithURL:(NSString *)url
              parameters:(NSDictionary *)parameters
                 success:(void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
-                failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure
-{
+                failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure{
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager POST:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
         success(task,responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failure(task,error);
     }];
-    
 }
 
 - (void)uploadFileWithURL:(NSString *)url

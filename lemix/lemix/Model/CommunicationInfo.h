@@ -30,7 +30,7 @@ typedef void(^completionHandler)(NSString *);
 @property NSString *sync;
 
 /**
- 条状类型
+ 跳转类型
  */
 @property NSString *type;
 

@@ -10,7 +10,8 @@
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <AMapLocationKit/AMapLocationKit.h>
 #import "MapLocationStandard.h"
-@interface AppDelegate : UIResponder <UIApplicationDelegate,MapLocationStandard>
+#import "CallCustomFuncStandard.h"
+@interface AppDelegate : UIResponder <UIApplicationDelegate,MapLocationStandard,CallCustomFuncStandard>
 @property AMapLocationManager *locationManager;
 @property (strong, nonatomic) UIWindow *window;
 @property UIInterfaceOrientationMask interfaceOrientationMask;

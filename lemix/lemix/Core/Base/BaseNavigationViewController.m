@@ -17,14 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    UIButton *tempBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    tempBtn.frame = CGRectMake(100, 200, 100, 100);
-//    [self.view addSubview:tempBtn];
-//    [tempBtn addTarget:self action:@selector(presentView:) forControlEvents:UIControlEventTouchUpInside];
-//    tempBtn.backgroundColor = [UIColor redColor];
-    
-    
-    
+    self.navigationBarHidden = YES;
     self.delegate = self;
     self.interactivePopGestureRecognizer.delegate = (id)self.interactivePopGestureRecognizer;
 }

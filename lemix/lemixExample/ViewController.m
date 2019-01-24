@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Lemix.h"
 #import "WaitingPage.h"
+#import "Lemoncs.h"
 @interface ViewController ()
 
 @end
@@ -37,31 +38,34 @@
     
 }
 - (void)presentView:(id)btn{
-    StartUpMixModuleParameter *moduleParameter = [[StartUpMixModuleParameter alloc]init];
-    moduleParameter.moduleKey = @"com.zhongwang.zwt.ext.attendance";
-    moduleParameter.packageTime = @"1536127267";
-    ////    moduleParameter.startPage = @"attendance";
-    //    moduleParameter.nativePageKey = @"123";
-    MixModuleLifeCycle *lifeCycle = [[MixModuleLifeCycle alloc]init];
-    [[Lemix defaultEngine] startUpMixModule:moduleParameter mixModuleLifeCycle:lifeCycle];
-    lifeCycle.onShow = ^{
-        NSLog(@"zhanshi");
-    };
-    //    lifeCycle.onShow = ^{
-    //        NSLog(@"zhansh1");
-    //    };
-    //    lifeCycle.onShow = ^{
-    //        NSLog(@"zhanshi2");
-    //    };
-    //
-    //    lifeCycle.onHide = ^{
-    //        NSLog(@"隐藏");
-    //    };
-    //    NativePageInfo *info = [[NativePageInfo alloc] init];
-    //    info.nativePageKey = @"123";
-    //    info.nativePage = NSClassFromString(@"555");
-    //    [[Lemix defaultEngine] registerNativePage:@[info]];
-    [[Lemix defaultEngine] startUpNativePage:moduleParameter];
+//    StartUpMixModuleParameter *moduleParameter = [[StartUpMixModuleParameter alloc]init];
+//    moduleParameter.moduleKey = @"com.zhongwang.zwt.ext.attendance";
+//    moduleParameter.packageTime = @"1536127267";
+//    ////    moduleParameter.startPage = @"attendance";
+//    //    moduleParameter.nativePageKey = @"123";
+//    MixModuleLifeCycle *lifeCycle = [[MixModuleLifeCycle alloc]init];
+//    [[Lemix defaultEngine] startUpMixModule:moduleParameter mixModuleLifeCycle:lifeCycle];
+//    lifeCycle.onShow = ^{
+//        NSLog(@"zhanshi");
+//    };
+//    //    lifeCycle.onShow = ^{
+//    //        NSLog(@"zhansh1");
+//    //    };
+//    //    lifeCycle.onShow = ^{
+//    //        NSLog(@"zhanshi2");
+//    //    };
+//    //
+//    //    lifeCycle.onHide = ^{
+//    //        NSLog(@"隐藏");
+//    //    };
+//    //    NativePageInfo *info = [[NativePageInfo alloc] init];
+//    //    info.nativePageKey = @"123";
+//    //    info.nativePage = NSClassFromString(@"555");
+//    //    [[Lemix defaultEngine] registerNativePage:@[info]];
+//    [[Lemix defaultEngine] startUpNativePage:moduleParameter];
+    [Lemoncs startScanQRCodeReturn:^(id item) {
+        
+    }];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
