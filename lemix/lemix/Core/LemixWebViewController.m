@@ -83,6 +83,9 @@
     [self.webView evaluateJavaScript:[NSString stringWithFormat:@"__onload(%@)",self.json] completionHandler:nil];
     _hasFinished = YES;
     [self.webView evaluateJavaScript:@"__onshow()" completionHandler:nil];
+    if (self.webOnShow) {
+        self.webOnShow(self.webView);
+    }
 }
 #pragma mark - WKScriptMessageHandler
 // 通过这个方法获取 JS传来的json字符串
@@ -243,6 +246,9 @@
     if (_hasFinished) {
         
         [self.webView evaluateJavaScript:@"__onshow()" completionHandler:nil];
+        if (self.webOnShow) {
+            self.webOnShow(self.webView);
+        }
     }
     
     UIButton *closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];

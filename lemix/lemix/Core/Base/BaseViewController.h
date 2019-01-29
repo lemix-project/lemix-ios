@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 //typedef void(^responce)(NSDictionary *);
-
+#import <WebKit/WebKit.h>
+typedef void(^webBlock)(WKWebView*);
 
 //NS_ASSUME_NONNULL_BEGIN
 
@@ -49,6 +50,7 @@
 
 - (void)onClose;
 - (void)showTip:(NSString *)title;
+@property(nonatomic, copy)webBlock webOnShow;
 
 @end
 

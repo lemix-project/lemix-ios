@@ -91,6 +91,7 @@
     }
     aimViewController.configDic = styleDic;
     aimViewController.json = aimInfo.json;
+    aimViewController.webOnShow = aimInfo.webOnShow;
     if (status == 1) {
         
         BaseNavigationViewController *naVC = [[BaseNavigationViewController alloc] initWithRootViewController:aimViewController];

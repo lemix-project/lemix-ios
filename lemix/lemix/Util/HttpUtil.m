@@ -43,7 +43,7 @@
 }
 
 - (void)uploadFileWithURL:(NSString *)url
- parameters:(NSDictionary *)parameters
+               parameters:(NSDictionary *)parameters
                  fileData:(NSData *)fileData
                      name:(NSString *)name
                  fileName:(NSString *)fileName
@@ -136,7 +136,7 @@
 }
 
 - (void)createFile:(NSString *)filePath {
-
+    
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
     
@@ -168,9 +168,9 @@
     NSDirectoryEnumerator *myDirectoryEnumerator = [myFileManager enumeratorAtPath:path];
     //列举目录内容，可以遍历子目录
     while ((path = [myDirectoryEnumerator nextObject]) != nil) {
-
+        
         if ([[path pathExtension] isEqualToString:@"html"]) {
-
+            
             [fileNameAndPathDic setObject:[NSString stringWithFormat:@"%@/pages/%@",filePath,path] forKey: [NSString stringWithFormat:@"%@.%@",configDic[@"identifier"],[[path stringByReplacingOccurrencesOfString:@"/" withString:@"."]stringByReplacingOccurrencesOfString:@".index.html" withString:@""]]];
         }
     }
@@ -207,27 +207,27 @@
     NSString *mixModelLocalPath = [NSString stringWithFormat:@"%@/%@/MixModules/%@-%@.zip",config.workspacePath,engineName,moduleInfo.mixModuleIdentifier,moduleInfo.packageTime];
     NSURL *mixModuleURL = [NSURL URLWithString:moduleInfo.mixModuleURL];
     if ([@[@"http",@"https"] containsObject:mixModuleURL.scheme]) {
-
+        
         NSFileManager *fileManager = [NSFileManager defaultManager];
         // fileExistsAtPath 判断一个文件或目录是否有效
         BOOL existed = [fileManager fileExistsAtPath:mixModelLocalPath];
         if (!existed) {
             
             [self downloadFileWithURL:moduleInfo.mixModuleURL saveToPath:mixModelLocalPath completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
-
+                
                 [self jumpProgremActionMixModuleConfig:config engineName:engineName mixModuleInfo:moduleInfo zipAtPath:[filePath path] startUpMixModuleParameter:mixModuleParameter];
             }];
         }else{
             //存在当前目录
-
+            
             [self jumpProgremActionMixModuleConfig:config engineName:engineName mixModuleInfo:moduleInfo zipAtPath:mixModelLocalPath startUpMixModuleParameter:mixModuleParameter];
         }
     }else{
         //zip包解压
         //界面跳转
-
+        
         //存在当前目录
-
+        
         [self jumpProgremActionMixModuleConfig:config engineName:engineName mixModuleInfo:moduleInfo zipAtPath:moduleInfo.mixModuleURL startUpMixModuleParameter:mixModuleParameter];
     }
 }
@@ -245,6 +245,7 @@
         aimViewControllerInfo.type = @"ext";
         aimViewControllerInfo.json = mixModuleParameter.json;
         aimViewControllerInfo.webProgram = webProgramDic;
+        aimViewControllerInfo.webOnShow = mixModuleParameter.webOnShow;
         [UiNavigation pushOrPresent:2 baseViewController:(BaseViewController *)config.waitingPage aimInfo:aimViewControllerInfo defaultStyle:nil];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             NSMutableArray *vcArr = [NSMutableArray arrayWithArray:config.waitingPage.navigationController.viewControllers];

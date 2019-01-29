@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <WebKit/WebKit.h>
+typedef void(^webBlock)(WKWebView*);
 //NS_ASSUME_NONNULL_BEGIN
 
 @interface AimViewControllerInfo : NSObject
@@ -27,6 +28,7 @@
  需要传递的json
  */
 @property NSString *json;
+@property(nonatomic, copy)webBlock webOnShow;
 @end
 
 //NS_ASSUME_NONNULL_END

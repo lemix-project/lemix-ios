@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <WebKit/WebKit.h>
+typedef void(^webBlock)(WKWebView*);
 //NS_ASSUME_NONNULL_BEGIN
 
 @interface StartUpMixModuleParameter : NSObject
@@ -26,6 +27,9 @@
 @property NSString *json;
 @property NSString *moduleKey;
 @property NSString *nativePageKey;
+
+@property(nonatomic, copy)webBlock webOnShow;
+
 @end
 
 //NS_ASSUME_NONNULL_END
