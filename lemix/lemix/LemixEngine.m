@@ -112,10 +112,15 @@
                 BaseNavigationViewController *lemixNavi = [[BaseNavigationViewController alloc] initWithRootViewController:self.config.waitingPage];
                 lemixNavi.lemixEngine = self;
                 lemixNavi.instanceKey = [NSString stringWithFormat:@"%@-%@",moduleParameter.moduleKey,moduleParameter.packageTime];
-                
                 [self.config.waitingPage onWaiting:instance.mixModuleInfo];
-                [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:lemixNavi animated:YES completion:^{
-                    
+                UIViewController *tempVC = [UIApplication sharedApplication].keyWindow.rootViewController.presentedViewController?[UIApplication sharedApplication].keyWindow.rootViewController.presentedViewController:[UIApplication sharedApplication].keyWindow.rootViewController;
+                [tempVC presentViewController:lemixNavi animated:YES completion:^{
+                    //``````````````````````````````
+                    NSData * tempArchive = [NSKeyedArchiver archivedDataWithRootObject:self.config.waitingPage.view];
+                    UIView *waitingView = [NSKeyedUnarchiver unarchiveObjectWithData:tempArchive];
+                    waitingView.tag = 22222;
+                    [[UIApplication sharedApplication].keyWindow addSubview:waitingView];
+                    //``````````````````````````````````
                     [self.httpManager StartupMixModule:self.config mixModuleInfo:instance.mixModuleInfo engineName:self.engineName startUpMixModuleParameter:moduleParameter];
                     moduleLifeCycle.onShow();
                 }];
@@ -130,8 +135,14 @@
         lemixNavi.lemixEngine = self;
         lemixNavi.instanceKey = [NSString stringWithFormat:@"%@-%@",moduleParameter.moduleKey,moduleParameter.packageTime];
         [self.config.waitingPage onWaiting:moduleInfo];
-        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:lemixNavi animated:YES completion:^{
-            
+        UIViewController *tempVC = [UIApplication sharedApplication].keyWindow.rootViewController.presentedViewController?[UIApplication sharedApplication].keyWindow.rootViewController.presentedViewController:[UIApplication sharedApplication].keyWindow.rootViewController;
+        [tempVC presentViewController:lemixNavi animated:YES completion:^{
+            //``````````````````````````````
+            NSData * tempArchive = [NSKeyedArchiver archivedDataWithRootObject:self.config.waitingPage.view];
+            UIView *waitingView = [NSKeyedUnarchiver unarchiveObjectWithData:tempArchive];
+            waitingView.tag = 22222;
+            [[UIApplication sharedApplication].keyWindow addSubview:waitingView];
+            //``````````````````````````````````
             [self.httpManager StartupMixModule:self.config mixModuleInfo:moduleInfo engineName:self.engineName startUpMixModuleParameter:moduleParameter];
             moduleLifeCycle.onShow();
         }];

@@ -245,7 +245,18 @@
         aimViewControllerInfo.type = @"ext";
         aimViewControllerInfo.json = mixModuleParameter.json;
         aimViewControllerInfo.webProgram = webProgramDic;
-        aimViewControllerInfo.webOnShow = mixModuleParameter.webOnShow;
+        //        aimViewControllerInfo.webOnShow = mixModuleParameter.webOnShow;
+        aimViewControllerInfo.webOnShow = ^(WKWebView *webView) {
+            //加载完毕
+            UIView *tagView = [[UIApplication sharedApplication].keyWindow viewWithTag:22222];
+            [UIView animateWithDuration:0.5 animations:^{
+                tagView.alpha = 0;
+            } completion:^(BOOL finished) {
+                [tagView removeFromSuperview];
+            }];
+            NSLog(@"等待也删除");
+            mixModuleParameter.webOnShow(webView);
+        };
         [UiNavigation pushOrPresent:2 baseViewController:(BaseViewController *)config.waitingPage aimInfo:aimViewControllerInfo defaultStyle:nil];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             NSMutableArray *vcArr = [NSMutableArray arrayWithArray:config.waitingPage.navigationController.viewControllers];

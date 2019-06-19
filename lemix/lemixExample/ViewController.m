@@ -44,7 +44,7 @@
 //    ////    moduleParameter.startPage = @"attendance";
 //    //    moduleParameter.nativePageKey = @"123";
 //    MixModuleLifeCycle *lifeCycle = [[MixModuleLifeCycle alloc]init];
-//    [[Lemix defaultEngine] startUpMixModule:moduleParameter mixModuleLifeCycle:lifeCycle];
+    [[Lemix defaultEngine] startUpMixModule:moduleParameter mixModuleLifeCycle:lifeCycle];
 //    lifeCycle.onShow = ^{
 //        NSLog(@"zhanshi");
 //    };

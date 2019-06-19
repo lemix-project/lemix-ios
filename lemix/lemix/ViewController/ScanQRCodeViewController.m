@@ -35,7 +35,7 @@ static CGFloat ScanWidth;
     // Do any additional setup after loading the view.
     ScanHeight = _scanSize.height;
     ScanWidth = _scanSize.width;
-    [self createUI];
+    [self createScan];
     [self capture];
     [self.view bringSubviewToFront:self.navigationBar];
 }
@@ -157,7 +157,11 @@ static CGFloat ScanWidth;
     }
 }
 
-- (void)createUI{
+- (void)createScan{
+    self.navigationBar.backgroundColor = [UIColor clearColor];
+    self.titleLabel.text = @"二维码/条码";
+    self.titleLabel.textColor = [UIColor whiteColor];
+    [self.navigationBar setShadowImage:[[UIImage alloc]init]];
     //扫描区域
     CGRect scanFrame = CGRectMake((SCREEN_WIDTH-ScanWidth)/2, _scanY, ScanWidth, ScanHeight);
     

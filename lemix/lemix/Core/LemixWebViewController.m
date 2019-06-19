@@ -109,8 +109,7 @@
 }
 - (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * _Nullable))completionHandler{
     NSLog(@"promtp:%@",prompt);
-    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[prompt dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers
-                                                          error:nil];
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[prompt dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:nil];
     
     NSArray *components = [dic[@"type"] componentsSeparatedByString:@"."];
     if (components.count > 2) {
@@ -302,7 +301,11 @@
 }
 
 - (void)closePlugin:(UIButton *)btn{
-    [self dismissViewControllerAnimated:YES completion:nil];
+    UIViewController *vc = self;
+    while(vc.presentingViewController !=nil) {
+        vc = vc.presentingViewController;
+    }
+    [vc dismissViewControllerAnimated:YES completion:nil];
 }
 
 
